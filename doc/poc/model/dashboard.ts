@@ -8,7 +8,7 @@ interface LinkNode {
   id: String,
   type: "MENU" | "LINK" | "FOLDER",
   title: String,
-  description: String,
-  urlLogo: String | undefined,
+  description: String | null,
+  urlLogo: String | undefined | null,
   nodes: LinkNode[],
 }
