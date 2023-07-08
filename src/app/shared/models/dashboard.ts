@@ -1,6 +1,7 @@
 export interface Dashboard {
   id: string,
   data: LinkNode,
+  creator: string,
   privacy: "PUBLIC" | "RESTRICTED"
 }
 

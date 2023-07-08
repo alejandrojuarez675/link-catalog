@@ -2,11 +2,12 @@ import { Dashboard } from 'src/app/shared/models/dashboard';
 
 export const treeExample: Dashboard = {
   id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+  creator: "alejandrojuarez675@gmail.com",
   data: {
     id: 'uuid-code-uuid-code-uuid-code-uuid-code',
     type: 'MENU',
-    title: 'my shared board',
-    description: null,
+    title: 'Lista de sitios que más uso',
+    description: "Te paso esta lista de boludeces para sepas que sitios uso más seguidos",
     urlLogo: null,
     link: null,
     nodes: [
