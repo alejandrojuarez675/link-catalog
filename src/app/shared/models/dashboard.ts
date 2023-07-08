@@ -1,14 +1,15 @@
-interface Dashboard {
-  id: String,
+export interface Dashboard {
+  id: string,
   data: LinkNode,
   privacy: "PUBLIC" | "RESTRICTED"
 }
 
-interface LinkNode {
-  id: String,
+export interface LinkNode {
+  id: string,
   type: "MENU" | "LINK" | "FOLDER",
-  title: String,
-  description: String | null,
-  urlLogo: String | undefined | null,
+  title: string,
+  description: string | null,
+  urlLogo: string | undefined | null,
+  link: string | null,
   nodes: LinkNode[],
 }

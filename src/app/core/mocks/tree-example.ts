@@ -1,29 +1,110 @@
-const treeExample: Dashboard = {
-    id: "uuid-code-uuid-code-uuid-code-uuid-code",
-    data: {
-      id: "uuid-code-uuid-code-uuid-code-uuid-code",
-      type: "MENU",
-      title: "my shared board",
-      description: null,
-      urlLogo: null,
-      nodes: [
+import { Dashboard } from 'src/app/shared/models/dashboard';
+
+export const treeExample: Dashboard = {
+  id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+  data: {
+    id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+    type: 'MENU',
+    title: 'my shared board',
+    description: null,
+    urlLogo: null,
+    link: null,
+    nodes: [
+      {
+        id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+        type: 'FOLDER',
+        title: 'Buscadores',
+        description: '',
+        urlLogo: null,
+        link: null,
+        nodes: [
           {
-              id: "uuid-code-uuid-code-uuid-code-uuid-code",
-              type: "LINK",
-              title: "others",
-              description: "",
-              urlLogo: null,
-              nodes: []
+            id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+            type: 'LINK',
+            title: 'Google',
+            description: '',
+            urlLogo: null,
+            link: 'https://www.google.com',
+            nodes: [],
+          },
+        ],
+      },
+      {
+        id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+        type: 'FOLDER',
+        title: 'Eshops',
+        description: '',
+        urlLogo: null,
+        link: null,
+        nodes: [
+          {
+            id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+            type: 'FOLDER',
+            title: 'Con envío a Argentina',
+            description: '',
+            urlLogo: null,
+            link: null,
+            nodes: [
+              {
+                id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+                type: 'LINK',
+                title: 'eBay',
+                description: '',
+                urlLogo: null,
+                link: 'https://www.ebay.com',
+                nodes: [],
+              },
+              {
+                id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+                type: 'LINK',
+                title: 'Mercado Libre',
+                description: '',
+                urlLogo: null,
+                link: 'https://www.mercadolibre.com',
+                nodes: [],
+              },
+            ],
           },
           {
-              id: "uuid-code-uuid-code-uuid-code-uuid-code",
-              type: "LINK",
-              title: "others",
-              description: "",
-              urlLogo: null,
-              nodes: []
+            id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+            type: 'FOLDER',
+            title: 'Sin envío a Argentina',
+            description: '',
+            urlLogo: null,
+            link: null,
+            nodes: [
+              {
+                id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+                type: 'LINK',
+                title: 'eBay',
+                description: '',
+                urlLogo: null,
+                link: 'https://www.ebay.com',
+                nodes: [],
+              },
+              {
+                id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+                type: 'LINK',
+                title: 'Mercado Libre',
+                description: '',
+                urlLogo: null,
+                link: 'https://www.mercadolibre.com',
+                nodes: [],
+              },
+              {
+                id: 'uuid-code-uuid-code-uuid-code-uuid-code',
+                type: 'LINK',
+                title: 'Amazon',
+                description: '',
+                urlLogo: null,
+                link: 'https://www.amazon.com',
+                nodes: [],
+              },
+            ],
           },
-      ]
-    },
-    privacy: "PUBLIC"
-}
+        ],
+      },
+    ],
+  },
+  privacy: 'PUBLIC',
+};
