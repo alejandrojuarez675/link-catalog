@@ -1,0 +1,24 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle *ngFor="let node of data">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <ng-container *ngIf="node.link">
+          <a [href]="node.link" target="_blank">
+            <app-link-chip [text]="node.title" srcImg="{{node.link}}/favicon.ico"></app-link-chip>
+          </a>
+        </ng-container>
+        <ng-container *ngIf="!node.link">
+          <mat-icon class="mat-icon-rtl-mirror">
+            folder_open
+          </mat-icon>
+          {{node.title}}
+        </ng-container>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <ng-container *ngIf="!node.link">
+      <app-link-tree-expantion-panel [data]="node.nodes"></app-link-tree-expantion-panel>
+    </ng-container>
+
+  </mat-expansion-panel>
+</mat-accordion>
