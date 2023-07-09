@@ -2,10 +2,10 @@
   <!-- This is the tree node template for leaf nodes -->
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
     <!-- use a disabled button to provide padding for tree leaf -->
-    <button mat-icon-button disabled></button>
     <ng-container *ngIf="node.url">
-      <img src="{{node.url}}/favicon.ico" alt="" srcset="" height="20">
-      <a [href]="node.url" target="_blank">{{node.name}}</a>
+      <a [href]="node.url" target="_blank">
+        <app-link-chip [text]="node.name" srcImg="{{node.url}}/favicon.ico"></app-link-chip>
+      </a>
     </ng-container>
     <ng-container *ngIf="!node.url">{{node.name}}</ng-container>
   </mat-tree-node>

@@ -7,11 +7,14 @@ import { PocRoutingModule } from './poc-routing.module';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatChipsModule} from '@angular/material/chips';
+import { LinkChipComponent } from './components/link-chip/link-chip.component';
 
 @NgModule({
   declarations: [
     PocPageComponent,
-    LinkTreeComponent
+    LinkTreeComponent,
+    LinkChipComponent
   ],
   imports: [
     CommonModule,
@@ -20,6 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatTreeModule,
     MatIconModule,
     MatButtonModule,
+    MatChipsModule,
   ]
 })
 export class PocModule { }
